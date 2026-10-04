@@ -1,0 +1,25 @@
+[project]
+name = "langgraph-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "hnkrupaal", email = "hnkrupaal@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.3",
+    "langchain-google-genai>=4.4.0",
+    "langchain-openai>=1.6.7",
+    "langgraph>=1.2.12",
+    "langsmith>=0.14.3",
+    "notebook>=7.6.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langgraph-learning = "langgraph_learning:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
